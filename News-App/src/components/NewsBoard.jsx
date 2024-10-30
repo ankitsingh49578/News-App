@@ -17,7 +17,7 @@ function NewsBoard({category}) {
         <h2 className='text-center p-4 font-bold text-xl'>Lastest <span className='bg-red-600 p-1 rounded-lg text-white'>News</span></h2>
         <div className='flex flex-row flex-wrap gap-6 justify-center my-3 py-2 '>
           {
-            articles.map((news, index) =>{
+            articles?.map((news, index) =>{
               return <NewsItem key={index} title={news.title} description={news.description} src={news.urlToImage} url={news.url} ></NewsItem>
             })
           }
